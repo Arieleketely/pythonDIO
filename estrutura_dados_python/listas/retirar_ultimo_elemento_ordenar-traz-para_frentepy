@@ -1,0 +1,21 @@
+linguagens = ["python", "js", "c", "java", "csharp"]
+#ordena de traz para frente
+
+linguagens.reverse()
+print(linguagens)
+
+#remove um elemento de uma lista e retorna o valor removido.
+#sem indicar um índice, ele sempre remove o último elemento da lista.
+
+print(linguagens.pop())      # remove "csharp"
+print(linguagens.pop())      # remove "java"
+print(linguagens.pop())      # remove "c"
+print(linguagens.pop(0))     # remove "python"
+
+# verifica se "c" ainda está na lista antes de remover
+if "c" in linguagens:
+    linguagens.remove("c")
+
+print(linguagens)
+
+
